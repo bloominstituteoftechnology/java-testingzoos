@@ -45,6 +45,7 @@ public class ZooServiceImplUnitTest {
 
     @Test
     public void findZooById() {
+        assertEquals("Gladys Porter Zoo", zooService.findZooById(1).getZooname());
     }
 
     @Test
