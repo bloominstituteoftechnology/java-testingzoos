@@ -58,6 +58,8 @@ public class ZooServiceImplUnitTest {
 
     @Test
     public void deleteZoo() {
+        zooService.deleteZoo(1);
+        assertEquals(4, zooService.findAllZoos().size());
     }
 
     @Test
