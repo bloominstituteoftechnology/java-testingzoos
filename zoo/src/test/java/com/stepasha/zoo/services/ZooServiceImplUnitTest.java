@@ -1,6 +1,8 @@
 package com.stepasha.zoo.services;
 
 import com.stepasha.zoo.ZooApplication;
+import com.stepasha.zoo.models.Zoo;
+import com.stepasha.zoo.models.ZooAnimals;
 import org.junit.Test;
 import org.junit.After;
 import org.junit.Before;
@@ -15,6 +17,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.persistence.EntityNotFoundException;
 import java.util.ArrayList;
+import java.util.List;
 
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
@@ -63,6 +66,14 @@ public class ZooServiceImplUnitTest {
 
     @Test
     public void updateZoo() {
+        ArrayList<Zoo> thisZoo = new ArrayList<>();
+        ArrayList<ZooAnimals> thisAnimal = new ArrayList<>();
+        Zoo zoo1 = new Zoo("Monkey Porter Zoo", thisAnimal);
+        zoo1.setZooid(1);
+
+        Zoo updateZoo1 = zooService.updateZoo(zoo1, 1);
+
+        assertEquals("Monkey Porter Zoo", updateZoo1.getZooname());
     }
 
     @Test
