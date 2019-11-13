@@ -28,8 +28,7 @@ public class ZooController
     private static final Logger logger = LoggerFactory.getLogger(RestExceptionHandler.class);
     @Autowired
     private ZooService zooService;
-    @Autowired
-    private TelephoneService telephoneService;
+
    // http://localhost:2020/zoos/zoos
     @GetMapping(value = "/zoos", produces = {"application/json"})
     public ResponseEntity<?> listAllZoos(HttpServletRequest request)
