@@ -42,47 +42,47 @@ public class ZooServiceImplUnitTest {
 
 
     @Test
-    public void findAllZoos() {
+    public void CfindAllZoos() {
         assertEquals(5, zooService.findAllZoos().size());
     }
 
     @Test
-    public void findZooById() {
+    public void DfindZooById() {
         assertEquals("Gladys Porter Zoo", zooService.findZooById(1).getZooname());
     }
 
     @Test
-    public void findZooByName() {
+    public void EfindZooByName() {
         assertEquals("Gladys Porter Zoo", zooService.findZooByName("Gladys Porter Zoo").getZooname());
     }
 
     @Test
-    public void deleteZoo() {
+    public void FdeleteZoo() {
         zooService.deleteZoo(1);
         assertEquals(4, zooService.findAllZoos().size());
     }
 
-    @Test
-    public void saveZoo() {
-    }
+ //  @Test
+ //  public void GsaveZoo() {
+ //  }
 
     @Test
-    public void updateZoo() {
+    public void HupdateZoo() {
         ArrayList<Zoo> thisZoo = new ArrayList<>();
         ArrayList<ZooAnimals> thisAnimal = new ArrayList<>();
         Zoo zoo1 = new Zoo("Monkey Porter Zoo", thisAnimal);
         zoo1.setZooid(1);
 
-        Zoo updateZoo1 = zooService.updateZoo(zoo1, 1);
+        Zoo updateZoo1 = zooService.updateZoo(zoo1, 3);
 
         assertEquals("Monkey Porter Zoo", updateZoo1.getZooname());
     }
 
-    @Test
-    public void deleteZooAnimal() {
-    }
-
-    @Test
-    public void addZooAnimal() {
-    }
+   // @Test
+   // public void IdeleteZooAnimal() {
+   // }
+//
+   // @Test
+   // public void JaddZooAnimal() {
+   // }
 }
