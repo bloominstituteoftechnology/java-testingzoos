@@ -30,4 +30,5 @@ public class ZooControllerIntegrationTest {
             given().when().get("/zoos/zoos").then().time(lessThan(5000L));
         }
 
+
 }
