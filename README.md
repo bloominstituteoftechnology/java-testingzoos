@@ -6,8 +6,8 @@ A student that completes this project shows that they can:
 
 ## Instructions
 Start with your zoo project:
-* Part 1 of zoo project is found here https://github.com/LambdaSchool/java-zoos
-* Part 2 of zoo project is found here https://github.com/LambdaSchool/java-exceptionalzoos
+* Part 1 of zoo project is found here https://github.com/BloomInstituteOfTechnology/java-zoos
+* Part 2 of zoo project is found here https://github.com/BloomInstituteOfTechnology/java-exceptionalzoos
 
 * Provide complete test coverage for the application by writing tests for the following
   * Unit testing for
